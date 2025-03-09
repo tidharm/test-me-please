@@ -35,6 +35,11 @@ npm start
 
 The client will run on http://localhost:3000
 
+> **NOTE:** If the server is installed on a remote machine, set the server URL using the environment variable `REACT_APP_SERVER_URL` before starting the client (`npm start`):  
+> ```bash
+> export REACT_APP_SERVER_URL="http://1.2.3.4:3001"
+> ```
+
 ## How to Use
 
 1. Enter the first number in the input field

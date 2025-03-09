@@ -15,6 +15,8 @@ const Calculator: React.FC = () => {
   const [result, setResult] = useState<CalculationResult | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
 
+  const serverUrl = process.env.REACT_APP_SERVER_URL || 'http://localhost:3001';
+
   // Handle calculation
   const handleCalculate = async () => {
     // Validate inputs
@@ -27,7 +29,7 @@ const Calculator: React.FC = () => {
       setLoading(true);
       
       // Call the backend API
-      const response = await fetch('http://localhost:3001/api/calculate', {
+      const response = await fetch(`${serverUrl}/api/calculate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
