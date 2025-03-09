@@ -11,6 +11,11 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+> **NOTE:** If the server is installed on a remote machine, set the server URL using the environment variable `REACT_APP_SERVER_URL` before starting the client (`npm start`):  
+> ```bash
+> export REACT_APP_SERVER_URL="http://1.2.3.4:3001"
+> ```
+
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
